@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>UserTables</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <table class="container">
+        <tr>
+            <th>Id</th>
+            <th>UserName</th>
+            <th>UserType</th>
+            <th>LastAccessed Time</th>
+            <th>MoreInfo</th>
+        </tr>
+
+        <tr>
+
+            <td>1</td>
+            <td>Yusuff</td>
+            <td>Admin</td>
+            <td>9:30</td>
+
+            <td><button class="Viewbutton"
+                    onclick="openModal('1','Yusuff','Admin','9:30','9791836601','yusuffsheriff420@gmail.com')">>></button>
+            </td>
+
+        </tr>
+        <td>2</td>
+        <td>Srijan</td>
+        <td>User</td>
+        <td>12:30</td>
+        <td><button class="Viewbutton"
+                onclick="openModal('2','Srijan','Admin','12:30','1234567891','srijan.s2018@vitstudent.ac.in')">>></button>
+        </td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Anirud</td>
+            <td>Admin</td>
+            <td>1:30</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('3','Anirud','User','1:30','1234567891','anirudh.a2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sandhya</td>
+            <td>User</td>
+            <td>11:30</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('4','Sandhya','Admin','11:30','1234567891','sandhya.c2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Vidya</td>
+            <td>User</td>
+            <td>5:45</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('5','vidya','User','5:45','1234567891','vidya.s2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Sankeet</td>
+            <td>Admin</td>
+            <td>4:45</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('6','Sankeet','User','4:45','1234567891','sankeet.s2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Ronak</td>
+            <td>User</td>
+            <td>8:32</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('7','Ronak','User','8:32','1234567891','ronak.s2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Sheriff</td>
+            <td>Admin</td>
+            <td>9:01</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('8','Sheriff','Admin','9:01','1234567891','sheriff.i2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Varsha</td>
+            <td>User</td>
+            <td>1:34</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('9','Varsha','User','1:34','1234567891','varsha.s2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Niharika</td>
+            <td>User</td>
+            <td>9:00</td>
+            <td><button class="Viewbutton"
+                    onclick="openModal('3','Niharika','User','9:00','1234567891','niharika.s2018@vitstudent.ac.in')">>></button>
+            </td>
+        </tr>
+
+
+    </table>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="user-details">
+                <h3>User Details</h3>
+            </div>
+            <div class="modal-content-image">
+                <img src="R.png" alt="images">
+            </div>
+            <div class="text">
+                <p><strong>UserID:</strong><span id="modal-userid"></span></p>
+                <p><strong>UserName:</strong><span id="modal-username"></span></p>
+                <p><strong>UserType:</strong><span id="modal-usertype"></span></p>
+                <p><strong>LastAccessedTime:</strong><span id="modal-Time"></span></p>
+                <P><strong>ContactNo:</strong><span id="modal-contact"></span></p>
+                <p><strong>Email:</strong><span id="modal-email"></span></p>
+            </div>
+            <button class="ok" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+    <script src="operations.js"></script>
+</body>
+
+</html>
